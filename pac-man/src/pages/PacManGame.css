@@ -1,0 +1,54 @@
+/* Estilo para el contenedor del juego */
+.App {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #000;
+    position: relative;
+  }
+  
+  /* Estilo para el marcador de puntuación */
+  .score {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el tablero del juego */
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  /* Estilo para las filas del tablero */
+  .row {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Estilo para las celdas del tablero */
+  .cell {
+    width: 10%;
+    height: 60px;
+  }
+  
+  /* Estilo para el PacMan */
+  .pacman {
+    background-color: #ff0;
+  }
+  
+  /* Estilo para los fantasmas */
+  .ghost {
+    background-color: #f00;
+  }
+  
+  /* Estilo para las paredes */
+  .wall {
+    background-color: #00f;
+  }
+  
+  /* Estilo para las píldoras */
+  .pellet {
+    background-color: green;
+  }
