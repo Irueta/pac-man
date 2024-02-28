@@ -52,8 +52,9 @@ const PacManGame = () => {
       const newBoard = JSON.parse(JSON.stringify(board));
       if (board[newPosition.y][newPosition.x] === 4) {
         setScore(score + 1);
+        newBoard[pacmanPosition.y][pacmanPosition.x] = 0;
       } else {
-        newBoard[pacmanPosition.y][pacmanPosition.x] = 4; // Reset the previous position
+        newBoard[pacmanPosition.y][pacmanPosition.x] = 0; // Reset the previous position
       }
       newBoard[newPosition.y][newPosition.x] = 1; // Set the new position
       setBoard(newBoard);
